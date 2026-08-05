@@ -836,7 +836,7 @@ function sendDevis(){
   const svcs=[...document.querySelectorAll('.chip.active')].map(c=>c.textContent.trim()).join(', ')||'Non précisé';
   const lieu=document.getElementById('f_lieu').value.trim()||'Non précisé';
   const urg=document.getElementById('f_urgence').value||'Non précisé';
-  const msg=`Bonjour NetSecury Africa 👋\n\n*DEMANDE DE DEVIS*\n━━━━━━━━━━━━━━━━━━\n👤 Nom : ${nom}\n📞 Téléphone : ${tel}\n📍 Localisation : ${lieu}\n🛠️ Service(s) : ${svcs}\n⏰ Urgence : ${urg}\n\n📝 Description :\n${desc}\n━━━━━━━━━━━━━━━━━━\n_Envoyé depuis netsecuryafrica.com_`;
+  const msg=`Bonjour NetSecury Africa 👋\n\n*DEMANDE DE DEVIS*\n━━━━━━━━━━━━━━━━━━\n👤 Nom : ${nom}\n📞 Téléphone : ${tel}\n📍 Localisation : ${lieu}\n🛠️ Service(s) : ${svcs}\n⏰ Urgence : ${urg}\n\n📝 Description :\n${desc}\n━━━━━━━━━━━━━━━━━━\n;
   window.open('https://wa.me/237698325373?text='+encodeURIComponent(msg),'_blank');
   document.getElementById('formView').style.display='none';
   document.getElementById('successView').style.display='block';
