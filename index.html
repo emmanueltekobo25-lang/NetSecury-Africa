@@ -454,7 +454,7 @@ footer{position:relative;z-index:1;background:var(--dark2);
 <section class="section" id="services">
   <div class="sec-eyebrow">// Ce que nous faisons</div>
   <div class="sec-title">NOS <span class="c">SERVICES</span></div>
-  <p class="sec-desc">Des solutions informatiques complètes pour particuliers et entreprises à Yaoundé.</p>
+  <p class="sec-desc">Des solutions informatiques complètes pour particuliers et entreprises à Yaoundé et Douala.</p>
   <div class="svc-grid">
     <div class="svc-card rev">
       <div class="svc-num">01</div><div class="svc-ico">🔧</div>
@@ -688,7 +688,7 @@ footer{position:relative;z-index:1;background:var(--dark2);
 <!-- ════ CTA ════ -->
 <div class="cta-band">
   <h2>PC LENT ? VIRUS ?<br>RÉSEAU EN PANNE ?<br><span>NE CHERCHEZ PLUS !</span></h2>
-  <p>NetSecury Africa intervient rapidement, partout à Yaoundé. Contactez-nous maintenant.</p>
+  <p>NetSecury Africa intervient rapidement, partout à Yaoundé et Douala. Contactez-nous maintenant.</p>
   <div class="cta-btns">
     <a href="https://wa.me/237698325373" class="btn-primary">📲 +237 698 325 373</a>
     <button class="btn-outline" style="cursor:pointer;font-family:'Exo 2',sans-serif;" onclick="openModal()">📋 Devis gratuit</button>
@@ -711,7 +711,7 @@ footer{position:relative;z-index:1;background:var(--dark2);
       </div>
       <div class="cc rev"><div class="cc-ico">📍</div>
         <div><div class="cc-lbl">Localisation</div>
-        <div class="cc-val">Yaoundé, Cameroun</div></div>
+        <div class="cc-val">Yaoundé & Douala, Cameroun</div></div>
       </div>
     </div>
     <div class="hours-box rev">
@@ -780,9 +780,9 @@ footer{position:relative;z-index:1;background:var(--dark2);
           </div>
         </div>
         <div class="field"><label>Ville / Quartier</label>
-          <input type="text" id="f_lieu" placeholder="Ex : Yaoundé – Bastos"/></div>
+          <input type="text" id="f_lieu" placeholder="Ex : Yaoundé – Bastos, Douala – Akwa…"/></div>
         <div class="field"><label>Décrivez votre besoin</label>
-          <textarea id="f_desc" placeholder="Ex : Mon PC est très lent depuis 2 jours, il démarre difficilement. J'ai besoin d'une intervention rapide, pour déplacement vers le domicile au frais du client..."></textarea></div>
+          <textarea id="f_desc" placeholder="Ex : Mon PC est très lent depuis 2 jours, il démarre difficilement. J'ai besoin d'une intervention rapide…"></textarea></div>
         <div class="field"><label>Niveau d'urgence</label>
           <select id="f_urgence">
             <option value="">-- Choisir --</option>
@@ -836,7 +836,7 @@ function sendDevis(){
   const svcs=[...document.querySelectorAll('.chip.active')].map(c=>c.textContent.trim()).join(', ')||'Non précisé';
   const lieu=document.getElementById('f_lieu').value.trim()||'Non précisé';
   const urg=document.getElementById('f_urgence').value||'Non précisé';
-  const msg=`Bonjour NetSecury Africa 👋\n\n*DEMANDE DE DEVIS*\n━━━━━━━━━━━━━━━━━━\n👤 Nom : ${nom}\n📞 Téléphone : ${tel}\n📍 Localisation : ${lieu}\n🛠️ Service(s) : ${svcs}\n⏰ Urgence : ${urg}\n\n📝 Description :\n${desc}\n━━━━━━━━━━━━━━━━━━\n;
+  const msg=`Bonjour NetSecury Africa 👋\n\n*DEMANDE DE DEVIS*\n━━━━━━━━━━━━━━━━━━\n👤 Nom : ${nom}\n📞 Téléphone : ${tel}\n📍 Localisation : ${lieu}\n🛠️ Service(s) : ${svcs}\n⏰ Urgence : ${urg}\n\n📝 Description :\n${desc}\n━━━━━━━━━━━━━━━━━━\n_Envoyé depuis netsecuryafrica.com_`;
   window.open('https://wa.me/237698325373?text='+encodeURIComponent(msg),'_blank');
   document.getElementById('formView').style.display='none';
   document.getElementById('successView').style.display='block';
