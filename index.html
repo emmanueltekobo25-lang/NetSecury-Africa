@@ -781,16 +781,17 @@ footer{position:relative;z-index:1;background:var(--dark2);
         </div>
         <div class="field"><label>Ville / Quartier</label>
           <input type="text" id="f_lieu" placeholder="Ex : Yaoundé – Bastos"/></div>
-        <div class="field"><label>Décrivez votre besoin</label>
-          <textarea id="f_desc" placeholder="Ex : Mon PC est très lent depuis 2 jours, il démarre difficilement. J'ai besoin d'une intervention rapide, pour déplacement vers le domicile au frais du client..."></textarea></div>
-        <div class="field"><label>Niveau d'urgence</label>
-          <select id="f_urgence">
-            <option value="">-- Choisir --</option>
-            <option>🔴 Urgent — aujourd'hui</option>
-            <option>🟡 Dans les 48h</option>
-            <option>🟢 Cette semaine</option>
-            <option>⚪ Pas pressé</option>
-          </select>
+       <div class="field"><label>Décrivez votre besoin</label>
+  <textarea id="f_desc" placeholder="Ex : Mon PC est très lent depuis 2 jours, il démarre difficilement. J'ai besoin d'une intervention rapide, déplacement à domicile..."></textarea>
+</div>
+<div class="field"><label>Niveau d'urgence</label>
+  <select id="f_urgence">
+    <option value="">-- Choisir --</option>
+    <option>🔴 Urgent — aujourd'hui</option>
+    <option>🟡 Dans les 48h</option>
+    <option>🟢 Cette semaine</option>
+    <option>⚪ Pas pressé</option>
+  </select>
         </div>
         <div class="modal-err" id="f_err">⚠️ Merci de remplir votre nom, numéro et décrire votre besoin.</div>
         <button class="modal-btn" onclick="sendDevis()">📲 Envoyer ma demande sur WhatsApp</button>
